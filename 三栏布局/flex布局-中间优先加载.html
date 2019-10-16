@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .left,
+        .right,
+        .middle {
+            height: 800px;
+        }
+
+        .left,
+        .right {
+            width: 400px;
+            background-color: #888888;
+        }
+
+        .left {
+            order: 0;
+        }
+
+        .middle {
+            order: 1;
+            width: 100%;
+            background-color: #444444;
+        }
+
+        .right {
+            order: 2;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="middle">middle</div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+    优先加载的秘诀：把middle的dom位置前置；利用order属性调整middle的水平排列位置。
+    <br>
+    <textarea cols="30" rows="10">
+            <div class="container">
+                <div class="middle">middle</div>
+                <div class="left">left</div>
+                <div class="right">right</div>
+            </div>
+    </textarea>
+</body>
+
+</html>

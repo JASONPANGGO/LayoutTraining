@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .content{
+            float: left;
+            width: 100%;
+        }
+        .main{
+            height: 400px;
+            margin-left: 110px;
+            margin-right: 220px;
+            background-color: #444444;
+        }
+        .left{
+            float: left;
+            margin-left: -100%;
+            height: 400px;
+            width: 100px;
+            background-color: #999999;
+        }
+        .right{
+            float: right;
+            height: 400px;
+            width: 200px;
+            background-color: #999999;
+            margin-left: -100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="content">
+            <div class="main"></div>
+        </div>
+        <div class="left"></div>
+        <div class="right"></div>
+
+    </div>
+
+    主要利用了margin-left:-100%，把left和right向左移动了一行的距离并换行推到了上一行
+</body>
+</html>
